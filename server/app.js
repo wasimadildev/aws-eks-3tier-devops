@@ -3,7 +3,7 @@ const app = express();
 const userRoutes = require('./routes/userRoutes');
 
 app.use(express.json());
-app.use(express.static('client/public')); // Serve static files from client
+app.use(express.static('client/public')); // Serve static files from clients
 
 app.use('/api', userRoutes);
 
